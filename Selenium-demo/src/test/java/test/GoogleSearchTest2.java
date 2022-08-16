@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.GoogleSearchPage;
 
-public class GoogleSearchTest {
+public class GoogleSearchTest2 {
     private static WebDriver driver = null;
 
     @BeforeTest
