@@ -5,6 +5,7 @@ import framework.DriverFactoryProvider;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import utils.PropertiesHandling;
 
 public class BaseTest {
 
@@ -16,7 +17,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void beforeSuite() {
-        DriverFactory driverFactory = DriverFactoryProvider.getDriverFactory("chrome");
+        DriverFactory driverFactory = DriverFactoryProvider.getDriverFactory(PropertiesHandling.getBrowser());
         driver = driverFactory.getDriver();
     }
 

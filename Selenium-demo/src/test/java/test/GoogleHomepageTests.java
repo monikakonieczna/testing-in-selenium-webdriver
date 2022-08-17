@@ -10,7 +10,7 @@ public class GoogleHomepageTests extends BaseTest {
     private WebDriver driver = null;
     Logger logger  = LoggerFactory.getLogger(GoogleHomepageTests.class);
 
-    @Test
+    @Test(groups = {"smoke"})
     public void googleSearch() {
         GoogleHomePage googleHomepage = new GoogleHomePage(getDriver());
         //go to google.com
